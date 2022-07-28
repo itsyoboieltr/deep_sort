@@ -6,6 +6,7 @@ import numpy as np
 import cv2
 import tensorflow.compat.v1 as tf
 
+tf.disable_v2_behavior()
 
 def _run_in_batches(f, data_dict, out, batch_size):
     data_len = len(out)
